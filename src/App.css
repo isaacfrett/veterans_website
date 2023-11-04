@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Fortuner';
+  src: url(/fonts/FortunerHeavy-jEMyR.otf), format(otf);
+
+}
+
+.App {
+  text-align: center;
+}
+
+.background-image {
+  width: 100vw;
+  filter: brightness(50%);
+}
+
+.nav {
+  background-color: transparent;
+  min-height: 8rem;
+  max-height: 8rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+}
+
+.nav-logo-link {
+  display: inline-block;
+  margin-right: 1rem;
+  white-space: nowrap;
+  height: 8rem;
+}
+
+.nav-logo {
+  height: 8rem;
+  filter: invert(100%);
+}
+
+.nav-logo:hover {
+  filter: invert(55%);
+}
+
+.nav-logo:hover {
+  cursor: pointer;
+}
+
+.nav-link {
+  color: white;
+  display: block;
+  padding: 2.62rem 2rem;
+  font-family: "Fortuner";
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
+.nav-link:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+
