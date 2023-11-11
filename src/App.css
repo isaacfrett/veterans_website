@@ -6,59 +6,61 @@
 
 .App {
   text-align: center;
+  /* background-image: linear-gradient(to right,#131414, #242524); */
+  min-height: 100%;
 }
 
 .background-image {
-  width: 100vw;
-  filter: brightness(50%);
+  display: block;
+  width: 100%;
+  filter: brightness(60%);
+  position: relative;
 }
 
 .nav {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
   background-color: transparent;
   min-height: 8rem;
   max-height: 8rem;
-  position: fixed;
-  top: 0;
-  display: flex;
-  vertical-align: middle;
-  justify-content: space-between;
+  width: 100%;
 }
 
-.nav-list {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  margin: 0;
+.nav-link {
+  float: left;
+  color: white;
+  margin-right: 2rem;
+  font-family: "Fortuner";
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.nav-right {
+  float: right;
+  margin-top: 3.5rem;
+  margin-right: 3em;
 }
 
 .nav-logo-link {
-  display: inline-block;
   margin-right: 1rem;
   white-space: nowrap;
-  height: 8rem;
+  /* height: 8rem; */
 }
 
 .nav-logo {
+  float: left;
+  margin-top: 1rem;
+  margin-left: 2rem;
   height: 8rem;
   filter: invert(100%);
 }
 
 .nav-logo:hover {
   filter: invert(55%);
-}
-
-.nav-logo:hover {
   cursor: pointer;
-}
-
-.nav-link {
-  color: white;
-  display: block;
-  padding: 2.62rem 2rem;
-  font-family: "Fortuner";
-  letter-spacing: 2.5px;
-  text-decoration: none;
-  font-size: 2.5rem;
 }
 
 .nav-link:hover {
@@ -66,4 +68,79 @@
   cursor: pointer;
 }
 
+.middle-body {
+  height: 12rem;
+  background-color: #D3D4D6;
+}
 
+.lower-body {
+  background-color: white;
+  height: 16rem;
+}
+
+.footer {
+  height: 12rem;
+  background-image: linear-gradient(to right,#131414, #3F4040);
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.footer-logo:hover {
+  filter: invert(55%);
+  cursor: pointer;
+}
+
+.footer-link:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+.footer-cols {
+  height: 12rem;
+  display: grid; 
+  grid-template-columns: 50% 2px 50%;
+}
+
+.col-left {
+  margin-top: 1.85em;
+}
+
+.footer-logo {
+  float: right;
+  height: 8rem;
+  filter: invert(100%);
+}
+
+.footer-logo-link {
+  margin-right: 1rem;
+  white-space: nowrap;
+  height: 8rem;
+}
+
+.col-right {
+  padding-left: 1em;
+  text-align: left;
+  margin-top: 2.5em;
+}
+
+.footer-link {
+  display: block;
+  color: white;
+  padding: 0.07em;
+  font-family: "Fortuner";
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+.divider {
+  background: white;
+  width: 2px;
+  margin-top: 2.5em;
+  height: 6.7em;
+  text-align: center;
+}
