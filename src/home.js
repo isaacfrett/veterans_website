@@ -1,9 +1,9 @@
 import logo from './assets/ie_logo.png';
 import computer from './assets/computer.jpg'
 
-import './App.css';
+import './home.css';
 
-function App() {
+function Home() {
   return (
     <div className="App">
       <img src={computer} className='background-image' alt='laptop in the background'></img>
@@ -40,4 +40,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
